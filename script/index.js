@@ -1,5 +1,5 @@
 
-const baseUrl = "https://cors.noroff.dev/https://rainydays.varmeopplevelser.no/wp-json/wc/store/products?per_page=20";
+const baseUrl = "https://cors.noroff.dev/https://rainydays.varmeopplevelser.no/wp-json/wc/store/products?per_page=16";
 const productContainer = document.querySelector(".products")
 
 async function getProducts(url){
@@ -8,7 +8,7 @@ async function getProducts(url){
     products.forEach(function(product){
         productContainer.innerHTML += `
         <div class="product"><h2><a href="product.html">${product.name}</h2></a>
-        <div class="product-image" style="image:url('${product.images[0].src}')
+        <div class="product-image"style="image:url('${product.images[0].src}')
 
         <div class="product-image"> ${product.images[0].src}
 
